@@ -11,14 +11,20 @@ body {
 }
 
 .contenedor {
-	width: 90%;
-	max-width: 1000px;
+	width: 100%;
+	max-width: 2000px;
 	margin: 0 auto 0 auto;
 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /*
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	-ms-grid-columns: repeat(3, 1fr);
 	-ms-grid: grid;
+    */
 	gap: 40px;
 }
 
@@ -82,4 +88,8 @@ body {
 
 .titular{
     color: #241744;
+}
+
+.cardStyle{
+    width: 400px;
 }

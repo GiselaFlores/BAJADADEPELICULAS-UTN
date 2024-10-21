@@ -41,16 +41,16 @@ const cargarPeliculas = async()=>{
             let peliculas = [];
 
             // recorrer la data y generar las cards para cada pelicula
-            data.result.forEach(pelicula => {
+            data.results.forEach(pelicula => {
                 peliculas += `
-                                <div class="card pelicula" style="width: 20rem;">
-                                    <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title titulos">${pelicula.title} </h5>
-                                        <p class="card-text descripcion">${pelicula.overview} </p>
-                                    </div>
-                                </div>
-                                `;  
+                <div class="card cardStyle pelicula">
+                    <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title titulos">${pelicula.title} </h5>
+                        <p class="card-text descripcion">${pelicula.overview} </p>
+                    </div>
+                </div>
+                `;            
             });
 
             //devolver al contenedor del HTML el array
